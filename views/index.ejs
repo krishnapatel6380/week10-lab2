@@ -2,8 +2,16 @@
 <% function renderLocation(location) { %>
 <div class="item-preview">
   <a href="/single-location/<%= location._id %>">
-    <h2>Title: <%= location.title %></h2>
-    <p>Written by Sami</p>
+    <h2>Name: <%= location.name %></h2>
+    <div>
+      <%= location.address %>
+    </div>
+    <p>
+      <strong>Latitude:</strong>
+      <%= location.latitude %><br />
+        <strong>Longitude:</strong>
+        <%= location.longitude %>
+    </p>
   </a>
 </div>
 <% } %>
